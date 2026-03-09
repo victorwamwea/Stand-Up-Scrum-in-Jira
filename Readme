@@ -1,0 +1,56 @@
+A clean, modern website built as part of the DevOps Micro-Internship program.  
+Focus: Hands-on DevOps practices (Git workflows, CI/CD concepts, cloud deployment to EC2) + Agile delivery using Scrum in Jira.
+
+## 📖 Project Overview
+
+This project demonstrates real-world DevOps and Agile skills by:
+- Improving a basic website UI (header, buttons, hero, footer, CTA, contact section)
+- Breaking work into Epics → Stories → Sub-tasks
+- Estimating with Fibonacci story points
+- Running sprints with clear goals
+- Planning future deployment to AWS EC2
+
+Built as a static site (HTML/CSS/JS) — ready for future enhancements like CI/CD pipeline (GitHub Actions), containerization, or IaC.
+
+## ✨ Key Features Implemented (Sprint 1)
+
+- Updated site header: “DevOps Micro-Internship — Learn by Building”
+- Refreshed primary button color with better contrast
+- Improved hero subtitle copy
+- Added versioned footer with deployment date
+- Added Contact/About section (placeholders)
+- Added “Join the DMI Waitlist” CTA button
+
+→ Total committed points in Sprint 1: 4 pts (header, subtitle, CTA focus)
+
+## 🛠️ Tech Stack
+
+- HTML5
+- CSS3 (custom styles + potential Bootstrap/Tailwind later)
+- JavaScript (vanilla, for future interactivity)
+- Deployment target: AWS EC2 (pending)
+- Project management: Jira Cloud (Team-managed Scrum)
+
+## 📋 Agile / Scrum Setup in Jira
+
+**Project**: DevOps Micro-Internship Website – George (Key: DMIWEB)  
+**Epic**: Polish DMI Website UI & Deploy  
+**Backlog**: 6 user stories with Gherkin acceptance criteria, labels (frontend/devops), story points (1/2/3 Fibonacci)  
+**Sub-tasks**: Detailed breakdown on key stories (edit → test → deploy → verify)  
+**Sprint 1**: 1-week sprint, goal = “Ship visible DMI Website UI polish (header, color, footer/CTA) to EC2 with screenshots”  
+**Reports**: Burndown chart enabled for tracking
+
+Full Jira setup screenshots and details are available in the assignment Google Doc: [Link to your Google Doc]
+
+## 🚀 Getting Started (Local Development)
+
+### Prerequisites
+- Any modern browser
+- (Optional) VS Code or any code editor
+- (Future) Node.js if adding build tools
+
+### Run Locally
+1. Clone the repo
+   ```bash
+   git clone https://github.com/victorwamwea/dmi-website.git
+   cd dmi-website
