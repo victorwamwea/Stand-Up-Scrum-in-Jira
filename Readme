@@ -1,56 +1,180 @@
-A clean, modern website built as part of the DevOps Micro-Internship program.  
-Focus: Hands-on DevOps practices (Git workflows, CI/CD concepts, cloud deployment to EC2) + Agile delivery using Scrum in Jira.
+Task 1 — Create the Jira Project (Team-managed → Scrum)
+Steps:
 
-## 📖 Project Overview
+Log in to Jira Cloud → https://your-domain.atlassian.net
+In the sidebar, next to Spaces (or top navigation Projects), click Create space (or + Create project if visible).
+Choose team-managed (select "Select a team-managed space" or similar).
+Under templates, choose Scrum (or Software → Scrum if options shown).
+Enter:
+Name: DevOps Micro-Internship Website – George
+Key: DMIWEB (or auto)
 
-This project demonstrates real-world DevOps and Agile skills by:
-- Improving a basic website UI (header, buttons, hero, footer, CTA, contact section)
-- Breaking work into Epics → Stories → Sub-tasks
-- Estimating with Fibonacci story points
-- Running sprints with clear goals
-- Planning future deployment to AWS EC2
+Set Access: Private
+Skip "Bring your team along" / invite step.
+Click Create.
 
-Built as a static site (HTML/CSS/JS) — ready for future enhancements like CI/CD pipeline (GitHub Actions), containerization, or IaC.
+Screenshot 1: Confirmation screen after creation, or sidebar / header showing project name + key (DMIWEB).
 
-## ✨ Key Features Implemented (Sprint 1)
 
-- Updated site header: “DevOps Micro-Internship — Learn by Building”
-- Refreshed primary button color with better contrast
-- Improved hero subtitle copy
-- Added versioned footer with deployment date
-- Added Contact/About section (placeholders)
-- Added “Join the DMI Waitlist” CTA button
+Task 2 — Create Your First Epic (From Backlog)
+Steps:
 
-→ Total committed points in Sprint 1: 4 pts (header, subtitle, CTA focus)
+Open your new project (click it in sidebar or Spaces list).
+Go to Backlog (left sidebar).
+If not visible: enable Backlog in Project settings → Features → toggle Backlog ON.
+In Backlog view, look for Epic panel (left side or toggle "Epic" / "Epics panel" ON if hidden).
+Click + Create Epic (or similar button in Epic panel).
+Epic Name: Polish DMI Website UI & Deploy
+Add a short Summary / Description if prompted.
+Create.
 
-## 🛠️ Tech Stack
+Notes:
+Epics group related stories for big deliverables. The Epic panel helps visualize progress.
+Screenshots:
 
-- HTML5
-- CSS3 (custom styles + potential Bootstrap/Tailwind later)
-- JavaScript (vanilla, for future interactivity)
-- Deployment target: AWS EC2 (pending)
-- Project management: Jira Cloud (Team-managed Scrum)
+Screenshot 2: Backlog view with Epic panel ON and your new Epic visible in the panel.
 
-## 📋 Agile / Scrum Setup in Jira
+Task 3 — Seed the Product Backlog (6 Stories under the Epic + Fibonacci points)
+Steps:
 
-**Project**: DevOps Micro-Internship Website – George (Key: DMIWEB)  
-**Epic**: Polish DMI Website UI & Deploy  
-**Backlog**: 6 user stories with Gherkin acceptance criteria, labels (frontend/devops), story points (1/2/3 Fibonacci)  
-**Sub-tasks**: Detailed breakdown on key stories (edit → test → deploy → verify)  
-**Sprint 1**: 1-week sprint, goal = “Ship visible DMI Website UI polish (header, color, footer/CTA) to EC2 with screenshots”  
-**Reports**: Burndown chart enabled for tracking
+In Backlog, click Create issue (or + button).
+Issue Type: Story
+Parent / Epic link: select "Polish DMI Website UI & Deploy"
+Assign to yourself.
+Fill Story point estimate (open issue after create if needed → add to Story Points field).
+Add Description + Acceptance Criteria (use Gherkin format in Description or dedicated AC field if available).
+Add Labels (type in Labels field).
+Repeat for all 6.
 
-Full Jira setup screenshots and details are available in the assignment Google Doc: [Link to your Google Doc]
+Stories to create (copy-paste):
 
-## 🚀 Getting Started (Local Development)
+S1 — Update site header text (2 pts)
+Description: Change top header to: “DevOps Micro-Internship — Learn by Building”
+Acceptance Criteria:
+Given I open the homepage, when the page loads, then the header shows exactly “DevOps Micro-Internship — Learn by Building”.
+And the change is visible on the EC2 URL (pending).
+Labels: frontend
+S2 — Primary button color refresh (2 pts)
+Description: Update primary button color (e.g., #0d6efd) for a cleaner look.
+AC:
+Given the homepage loads, when I view any primary button, then its background reflects the new color and text remains readable (AA contrast or better).
+And visible on EC2 (pending).
+Labels: frontend
+S3 — Improve hero subtitle copy (1 pt)
+Description: Replace hero subtitle with: “Practice real DevOps workflows — Git, CI/CD, Cloud, and deployments.”
+AC:
+Given the hero area loads, then the subtitle appears exactly as above and fits on one line on desktop.
+Labels: frontend
+S4 — Footer with version & date (2 pts)
+Description: Add footer text: “DMI Website v1.0 — Deployed on ” (static text is fine).
+AC:
+Given I scroll to the footer, then I see the version and a human-readable date.
+Labels: devops
+S5 — Add “Contact / About” section (2 pts)
+Description: Add a small section showing Name + Email + Community link (use placeholders).
+AC:
+Given I open the homepage, then I see a section with contact details (or placeholders) clearly visible.
+Labels: frontend
+S6 — Add “Join DMI” call-to-action (1 pt)
+Description: Add a CTA button/link: “Join the DMI Waitlist” (can link to placeholder #).
+AC:
+Given the homepage loads, then I see a CTA “Join the DMI Waitlist” and it is clickable.
+Labels: frontend
 
-### Prerequisites
-- Any modern browser
-- (Optional) VS Code or any code editor
-- (Future) Node.js if adding build tools
+Notes:
+All stories linked to the Epic, estimated, with clear AC in Gherkin.
+Screenshots:
 
-### Run Locally
-1. Clone the repo
-   ```bash
-   git clone https://github.com/victorwamwea/dmi-website.git
-   cd dmi-website
+Screenshot 3: Backlog showing Epic + all 6 stories indented/grouped under it.
+Screenshot 4: One opened story (e.g. S1 or S2) showing Story Points, AC text, Label applied.
+
+Task 4 — Add Sub-tasks to at Least 2 Stories
+Steps:
+
+Open story (e.g. S2).
+Under story title / details → click + Create sub-task (or child work item).
+Create these 4 sub-tasks (estimate 2–6 hours or leave blank):
+Edit HTML/CSS (make the change)
+Test locally (browser check)
+Deploy to EC2 (copy/upload)
+Verify & screenshot (capture EC2 URL)
+
+Repeat exactly for S4.
+
+Notes:
+Sub-tasks break stories into actionable steps.
+Screenshots:
+
+Screenshot 5: S2 opened, showing all 4 sub-tasks listed under it.
+Screenshot 6: S4 opened, showing all 4 sub-tasks.
+
+Task 5 — Tag Stories by Workstream (Labels)
+Steps:
+
+Open each story → edit → add Labels if missing.
+Confirm:
+S1, S2, S3, S5, S6: frontend
+S4: devops
+
+
+Notes:
+Labels enable filtering by area (frontend vs devops).
+Screenshots:
+
+Screenshot 7: Backlog or issue view showing at least 2 stories with labels visible (e.g. filter applied or details pane).
+
+Task 6 — Create Sprint 1 (1 week) + Set Sprint Goal + Start Sprint
+Steps:
+
+In Backlog, click Create sprint (or + Sprint button).
+Name: Sprint 1
+Drag 2–3 stories into it (suggest: S1 (2), S3 (1), S6 (1) — total 4 pts; or any combo ~3–5 pts).
+Click into sprint details → set Sprint Goal: “Ship visible DMI Website UI polish (header, color, footer/CTA) to EC2 with screenshots.”
+Click Start sprint (choose 1 week duration if prompted).
+
+Notes:
+Goal keeps focus. Board now shows active sprint.
+Screenshots:
+
+Screenshot 8: Backlog with Sprint 1 created, stories inside, points total visible.
+Screenshot 9: Active sprint / board view showing Sprint Goal.
+
+Task 7 — Use Filters to View Stories + Subtasks + Status
+Steps:
+
+In Backlog or Board → use quick filters or search bar.
+Filter examples:
+label = frontend → shows S1,S2,S3,S5,S6
+label = devops → shows S4
+Has sub-tasks (if filter available, or search "has:sub-tasks")
+
+Observe filtered results.
+
+Notes:
+Daily filtering helps focus on workstreams.
+Screenshots:
+
+Screenshot 10: Backlog/Board with label=frontend filter applied (showing results).
+Screenshot 11: Same with label=devops filter.
+
+Task 8 — Open Burndown Report (for later tracking)
+Steps:
+
+In project sidebar → Reports (if not visible: Project settings → Features → toggle Reports ON).
+Select Burndown Chart (or Sprint Burndown).
+Choose Sprint 1 (may show flat line since just started — normal).
+
+Notes:
+Burndown tracks remaining work. It populates as you log progress.
+Screenshots:
+
+Screenshot 12: Burndown Chart page open for Sprint 1.
+
+Final Tips for Submission:
+
+Create Google Doc named: George_DMI_Jira_Setup (or similar).
+Use exact structure from the assignment.
+Paste notes + screenshots under each task.
+Set sharing: Anyone with the link → Viewer or Commenter.
+Test link in incognito mode.
+If any UI differs slightly (Atlassian updates labels occasionally), follow the closest equivalent (e.g., "space" vs "project", toggle features in settings).
